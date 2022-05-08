@@ -69,10 +69,8 @@ client.on('messageCreate', message => {
 	if (!message.content.startsWith(Prefix)) { return; }
 	// Checking if the message is from a bot
 	if (message.author.bot) { return; }
-	let command = message.content.replace(Prefix, '');
+	const command = message.content.replace(Prefix, '').toLowerCase();
 	client.channels.fetch(LoggingChannel).then(Channel => Channel.send('[COMMAND] \'' + message.content + '\' from: ' + message.author.tag));
-
-	command = command.toLowerCase();
 
 	if (command.startsWith('menusoir')) {
 		menusoir(message, Prefix);

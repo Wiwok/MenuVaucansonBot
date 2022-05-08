@@ -8,8 +8,7 @@ const days = ['', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi'];
 function catchTheMenu(embed, day) {
 	// Here we construct the embed
 	embed = embed
-		.setTitle('Menu')
-		.setDescription('Menu du ' + days[day] + ' ' + Menu[0][day - 1])
+		.setTitle('Menu du ' + days[day] + ' ' + Menu[0][day - 1])
 		.setFooter({ text: 'La réelle composition des menus, ne dépendant pas de moi, peut se révéler incorrecte...' });
 	if (Menu[day + 1][0] != '') { embed = embed.addField(Menu[1][0], Menu[day + 1][0]); }
 	if (Menu[day + 1][1] != '') { embed = embed.addField(Menu[1][1], Menu[day + 1][1]); }

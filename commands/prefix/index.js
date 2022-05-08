@@ -9,7 +9,7 @@ function prefix(message, oldPrefix) {
 		return;
 	}
 
-	let newPrefix = message.content.replace(oldPrefix, '');
+	let newPrefix = message.content.replace(oldPrefix, '').toLowerCase();
 	newPrefix = newPrefix.replace('prefix', '');
 	while (newPrefix.includes(' ')) {
 		newPrefix = newPrefix.replace(' ', '');
