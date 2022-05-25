@@ -8,6 +8,26 @@ It was made by a Vaucanson's student
 
 The default prefix for using it is **§**
 
+You can invite the bot to your server by clicking [here](https://discord.com/api/oauth2/authorize?client_id=953947865875644416&permissions=8&scope=bot%20applications.commands).
+
+## How to get your instance of this bot?
+1. Clone this repo with `git clone https://github.com/Wiwok/MenuVaucansonBot/`
+2. Run `npm i` to install all node dependencies.
+3. Create a .env file
+4. Inside of it, add:
+```
+PUBLIC_TOKEN={Your Bot token}
+LOGGING_CHANNEL={Your logging channel ID}
+```
+5. Run `node .` to run the bot.
+6. **Congratulation, your bot is now running !**
+
+Optionally, add this inside your .env:
+```
+DEV_TOKEN={Your WIP bot token}
+```
+With this, you can quickly switch between two bots by changing the value of the isPublic variable.
+
 ## Documentation
 Here are all of the commands
 ### Menu
